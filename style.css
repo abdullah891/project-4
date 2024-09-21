@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+#right{
+    width: 60%;
+    height: 100%;   
+}
+
+.right-top{
+    display: flex;
+    width: 100%;
+    height: 55%;
+}
+
+.right-bottom{
+    width: 100%;
+    height: 45%;
+    background-image: url(jonas-kakaroto-5JQH9Iqnm9o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.right-top-left{
+    width: 55%;
+    height: 100%;
+    background-image: url(xiaolong-wong-nibgG33H0F8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.right-top-right{
+    width: 45%;
+    height: 100%;
+    background-image: url(monika-grabkowska-qSkWlOBHia0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.nav-left{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right a{
+    margin-left: 60px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+#left .text-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-area h1{
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.text-area p{
+    opacity: .8;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+button{
+    background-color:transparent;
+    width: 40%;
+    height: 32px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+button:hover{
+    background-color:  rgb(236, 170, 29);;
+}
+
+@media(max-width: 600px) {
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+
+    }
+    #main #right{
+        width: 100%;
+    }
+    .text-area h1{
+        font-size: 40px;
+    }
+    button{
+        width: 50%;
+    }
+}
